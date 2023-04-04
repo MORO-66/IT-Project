@@ -1,0 +1,232 @@
+/*/////container//////////*/
+@font-face {
+    font-family: 'Alkatra';
+    src: url("../webfonts/Alkatra-VariableFont_wght.ttf");
+}
+body{
+    background-image: url("../images/wants.jpg");
+    font-family: "Montserrat-black";
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+#title{
+    
+    padding-bottom: 20%;
+    
+
+}
+
+.container-fluid{
+    padding: 3% 15% 7%;
+    
+}
+
+.p{
+    color:#ed6277;
+    font-size: small;
+}
+
+h2{
+    font-family: "montserrat-bold";
+    font-size: 3rem;
+    line-height: 1.5;
+    color:#00000025 !important;
+}
+/*/////////navbar///////*/
+.navbar{
+    padding-bottom: 0 0 ;
+    background-color: black;
+    border-radius: 20px;
+    width: 60%;
+    margin: auto;
+    transition-duration: 1s;
+}
+
+.navbar:hover{
+    width: 100%;
+    transition-duration: 600ms;
+    border-radius:0 ;
+}
+
+.logo{
+    font-family: 'Alkatra', 'cursive';
+    color:whitesmoke;
+    padding-left:4px ;
+}
+
+.nav-item{
+    padding: 18px;
+}
+
+.nav-link{
+    font-family: "montserrat-light";
+    font-size: 1.2rem;
+    color: #fff !important;
+}
+
+/*//////////head///////*/
+
+.download{
+    margin: 5% 3% 5% 0;
+}
+
+.n{
+ margin-top: 30px;
+ line-height: 2;
+ font-family: 'Alkatra';
+ color: rgb(242, 239, 239);
+ float: left !important;
+ padding: 20px;
+ clear: left;
+ text-align: left;
+}
+
+
+/*//////////feature//////*/
+
+
+#features{
+    padding:7% 15%;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 0 5%;
+    position: relative;
+    z-index: 1;
+}
+.boxes{
+    padding: 5%;
+}
+h3{
+    font-family: "Montserrat-black";
+}
+.lni1{
+    color: #000;
+    padding-bottom: 10%;
+}
+.lni:hover{
+    color: aliceblue;
+}
+
+/*//////////section///////*/
+
+#testimonials{
+    
+    text-align: center;
+    background-color: #000;
+    margin: 0 5%;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.img-section{
+    width: 20%;
+    border-radius: 100%;
+    margin: 10px;
+
+}
+
+em{
+    font-size: 1.5rem;
+}
+
+/*////////////press//////*/
+#press{
+    background-color: #000;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 5%;
+}
+.press-logos{
+    width: 15%;
+    margin: 20px 20px 50px ;
+}
+
+.carousel-item{
+    padding: 7% 15%;
+}
+
+/*///////pricing///////*/
+#pricing{
+    text-align: center;
+    padding: 7% 15%;
+}
+
+
+
+/*////////footer////*/
+
+#cta{
+    background-color: #000;
+    padding: 0 0 10%;
+    
+ }
+
+
+#footer{
+    padding: 10% 20%;
+     
+     text-align: center;
+}
+.p{
+    text-align: center;
+}
+
+.h3{
+    font-size: 3rem;
+    text-align: center;
+    padding: 7% 22% 3%;
+    color: #fff;
+    font-family: 'Alkatra', 'cursive';
+}
+h2{
+    color: beige;
+}
+.btn-f{
+    padding-right: 10px;
+}
+
+footer i{
+    margin: 2%;
+}
+/*/////////////login////*/
+.login{
+    color:#f3e3e373;
+    margin: 10 auto;
+    width: 55%;
+    text-align: center;
+    padding: 5%;
+    font-family:sans-serif;
+    background-color: rgba(0, 0, 0, 0.537);
+}
+.loginn{
+    color:#f3e3e373;
+    margin: 7% auto;
+    width: 60%;
+    background-color:rgba(0, 0, 0, 0.537);
+    padding: 10% 0;
+    border-radius: 10px;
+    font-family:sans-serif;
+    clear: both;;
+}
+.title-row{
+    padding: 5% 10%;
+
+}
+input
+{
+    background-color: #bcaaaa29 !important;
+    color: #efe9e9 !important;
+}
+.label{
+    margin: 3%;
+    float: left;
+    clear: left;
+    font-size: 1.5rem;
+}
+.input{
+    margin: 3% 0;
+}
