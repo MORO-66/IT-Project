@@ -243,3 +243,13 @@ input
 .input{
     margin: 3% 0;
 }
+
+.mb-3{
+    padding: 0 20%;
+}
+.login-div{
+    margin: 20px 0;
+}
+.form-check-input{
+    border-color:#efe9e9 !important;
+}
