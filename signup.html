@@ -15,7 +15,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <a href="./" class="navbar-brand">
-        <h2 class="logo">MORO</h2>
+        <img src="./images/LOGO.ico" alt="icon" style="width: 100px;">
       </a>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav ms-auto">
@@ -48,7 +48,7 @@
            
           </div>
           
-       <div class=" col-lg-6 col-md-6 col-sm-4 ">
+          <div class=" col-lg-6 col-md-6 col-sm-4 ">
             <input class="input form-control"type="name" name="email" value="">
             <input class="input form-control"type="username" name="email" value="">
             <input class="input form-control"type="email" name="email" value="">
@@ -59,19 +59,21 @@
           </div>
     
           <br>
-          </div> 
+        </div> 
         <fieldset>
           <legend>Choose your gender</legend>
-          <input type="radio" name="gender" value="">
-          <label for="male">Male</label>
-          <input type="radio" name="gender" value="">
-          <label for="female">Female</label>
-          <input type="radio" name="gender" value="">
-          <label for="didn't say">Prefer not to say</label>
+          <input type="radio" name="gender" id="gender-male" value="male">
+          <label for="gender-male">Male</label>
+          <input type="radio" name="gender" id="gender-female" value="female">
+          <label for="gender-female">Female</label>
+          <input type="radio" name="gender" id="gender-other" value="other">
+          <label for="gender-other">Other</label>
+          <input type="radio" name="gender" id="gender-none" value="none">
+          <label for="gender-none">Prefer not to say</label>
         </fieldset>
         <fieldset>
           <legend>Choose your Birth date</legend>
-          <input type="datetime-local" name="Birth date">
+          <input type="date" name="Birth date">
         </fieldset><br>
         <input type="submit" name="finish" value="submit" role="button" class="btn btn-lg btn-outline-light">
       </form>
