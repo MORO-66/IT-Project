@@ -4,7 +4,7 @@
     src: url("../webfonts/Alkatra-VariableFont_wght.ttf");
 }
 body{
-    background-image: url("../images/wants.jpg");
+    background-image: url("../images/best_luxury_car.jpg");
     font-family: "Montserrat-black";
     text-align: center;
     background-size: cover;
@@ -33,8 +33,16 @@ h2{
     font-family: "montserrat-bold";
     font-size: 3rem;
     line-height: 1.5;
-    color:#00000025 !important;
+    color:#00000030 !important;
 }
+::-webkit-scrollbar{
+    background-color: #0000001e;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #00000025;
+    border-radius: 10px;
+}
+
 /*/////////navbar///////*/
 .navbar{
     padding-bottom: 0 0 ;
@@ -62,7 +70,7 @@ h2{
 }
 
 .nav-link{
-    font-family: "montserrat-light";
+    font-family: 'Anton', sans-serif;
     font-size: 1.2rem;
     color: #fff !important;
 }
@@ -74,14 +82,13 @@ h2{
 }
 
 .n{
- margin-top: 30px;
- line-height: 2;
+ line-height: 1.5;
  font-family: 'Alkatra';
- color: rgb(242, 239, 239);
+ color: rgba(252, 245, 245, 0.687);
  float: left !important;
- padding: 20px;
- clear: left;
+ padding: 20px 10px;
  text-align: left;
+ margin-left: 70px;
 }
 
 
@@ -99,15 +106,14 @@ h2{
 .boxes{
     padding: 5%;
 }
+
+.feature-icon{
+    font-size: 3rem;
+    color: rgb(234, 3, 3);
+    padding-bottom: 15px;
+}
 h3{
     font-family: "Montserrat-black";
-}
-.lni1{
-    color: #000;
-    padding-bottom: 10%;
-}
-.lni:hover{
-    color: aliceblue;
 }
 
 /*//////////section///////*/
@@ -122,11 +128,12 @@ h3{
 }
 
 .img-section{
-    width: 20%;
-    border-radius: 100%;
+    width: 50%;
+    border-radius: 10%;
     margin: 10px;
 
 }
+
 
 em{
     font-size: 1.5rem;
