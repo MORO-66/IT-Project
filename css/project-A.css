@@ -47,13 +47,18 @@ h2{
 .navbar{
     padding-bottom: 0 0 ;
     background-color: black;
+    border-radius: 0;
+    width: 100%;
+    margin: auto;
+}
+
+.navbar-home{
     border-radius: 20px;
     width: 60%;
-    margin: auto;
     transition-duration: 1s;
 }
 
-.navbar:hover{
+.navbar-home:hover{
     width: 100%;
     transition-duration: 600ms;
     border-radius:0 ;
@@ -131,7 +136,8 @@ h3{
     width: 50%;
     border-radius: 10%;
     margin: 10px;
-
+    aspect-ratio: 3/2;/* set aspect ratio so that carousel doesn't change height when flipping */
+    object-fit: cover;
 }
 
 
