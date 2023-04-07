@@ -33,7 +33,7 @@ h2{
     font-family: "montserrat-bold";
     font-size: 3rem;
     line-height: 1.5;
-    color:#00000030 !important;
+    color:#00000030 ;
 }
 ::-webkit-scrollbar{
     background-color: #0000001e;
@@ -126,7 +126,7 @@ h3{
 #testimonials{
     
     text-align: center;
-    background-color: #000;
+    background-color: #0a0a0a;
     margin: 0 5%;
     color: #fff;
     border-radius: 20px;
@@ -142,12 +142,13 @@ h3{
 
 
 em{
+    display: block;
     font-size: 1.5rem;
 }
 
 /*////////////press//////*/
 #press{
-    background-color: #000;
+    background-color: #0a0a0a;
     padding-bottom: 10px;
     text-align: center;
     border-radius: 20px;
