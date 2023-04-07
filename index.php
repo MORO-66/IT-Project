@@ -75,7 +75,7 @@
           <div class="carousel-item">
             <h2 class="testimonial-text">Having best and most beautiful fast experience.</h2>
             <img class="testimonial-image img-section" src="./images/bmw.jpg" alt="lady-profile">
-            <em class="col-lg-6">ferrari </em>
+            <em>ferrari </em>
           </div>
           <div class="carousel-item">
             <h2 class="testimonial-text">Having best and most beautiful fast experience.</h2>
