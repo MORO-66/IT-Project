@@ -2,16 +2,50 @@
 <html>
 
   <head>
-    <title>Q Motors</title>
-    <?php include "head.php"; ?>
-  </head>
+    <meta charset="utf-8">
+    <title>Qmotors</title>
+    <link rel="icon" href="./images/logo.png">
+    <!--fonts awesome-->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!--css stylesheets-->
+    <link rel="stylesheet" href="css/project-A.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
 
+  </head>
   <body>
+    <!-- js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
     <section id="title">
       <div class="container-fluid">
         <!-- Nav Bar -->
 
-        <?php $is_home=true; include "navbar.php"; ?>
+        <nav class="navbar navbar-expand-lg navbar-home">
+          
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="C:\Users\Mohammed\Documents\GitHub\IT-Project\index.php" class="navbar-brand">
+            <img src="./images/logo.png" alt="icon" style="width: 100px;">
+          </a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <button type="button" class="btn btn-outline-dark nav-button " >
+                <a href="#footer" class="nav-link ">Contact</a>
+              </button>
+              <button type="button" class="btn btn-outline-dark ">
+                <a href="#footer" class="nav-link ">About</a>
+              </button>
+              <button type="button" class="btn btn-outline-dark">
+                <a href="#cta" class="nav-link ">Download</a>
+              </button>
+              </li>
+            </ul>
+                
+          </div>
+      
+        </nav>
 
 
         <!-- Title -->
@@ -23,8 +57,8 @@
             
           <h1 class="n">Buy and rent best Cars in QMOTORS.</h1>
             <div class="bottons ">
-            <a href="./signup.php" target="_blank"><button type="button" class="btn btn-lg btn-dark download" >Sign up</button></a>
-            <a href="./login.php" target="blank"><button  type="button"  class="btn btn-lg  btn-outline-light download">Sign in</button></a>
+            <a href="./signup.html" target="_blank"><button type="button" class="btn btn-lg btn-dark download" >Sign up</button></a>
+            <a href="./login.html" target="blank"><button  type="button"  class="btn btn-lg  btn-outline-light download">Sign in</button></a>
             
             </div>
           </div>
@@ -168,7 +202,27 @@
     </section>
 
 
-    <?php include "cta+footer.php"; ?>
+    <!-- Call to Action -->
+
+    <section id="cta">
+
+      <h3 class="h3">Download our Application for have a great sale.</h3>
+      <button class="btn btn-lg btn-dark btn-f " type="button"><i class="fa-brands fa-apple" style="padding-right: 3px;"></i>Download</button>
+      <button class="btn btn-lg btn-outline-light btn-f" type="button"><i class="fa-brands fa-google-play" style="padding-right: 3px;"></i>Download</button>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer id="footer">
+      <a href="https://www.instagram.com"><i class="fa-brands fa-instagram" style="color: tomato;"></i></a>
+      <i class="fa-brands fa-twitter" style="color:aqua;"></i>
+      <i class="fa-brands fa-google" style="color:rgb(0, 137, 205);"></i>
+
+      <p class="p">© Copyright Qmotors thats for jokes</p>
+
+    </footer>
 
 
   </body>
