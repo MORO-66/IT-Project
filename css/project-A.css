@@ -33,7 +33,7 @@ h2{
     font-family: "montserrat-bold";
     font-size: 3rem;
     line-height: 1.5;
-    color:#00000030 ;
+    /*color:#00000030 ;*/
 }
 ::-webkit-scrollbar{
     background-color: #0000001e;
@@ -196,9 +196,7 @@ em{
     color: #fff;
     font-family: 'Alkatra', 'cursive';
 }
-h2{
-    color: beige;
-}
+
 .btn-f{
     padding-right: 10px;
 }
