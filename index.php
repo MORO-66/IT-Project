@@ -57,8 +57,8 @@
             
           <h1 class="n">Buy and rent best Cars in QMOTORS.</h1>
             <div class="bottons ">
-            <a href="./signup.html" target="_blank"><button type="button" class="btn btn-lg btn-dark download" >Sign up</button></a>
-            <a href="./login.html" target="blank"><button  type="button"  class="btn btn-lg  btn-outline-light download">Sign in</button></a>
+            <a href="./signup.php" target="_blank"><button type="button" class="btn btn-lg btn-dark download" >Sign up</button></a>
+            <a href="./login.php" target="blank"><button  type="button"  class="btn btn-lg  btn-outline-light download">Sign in</button></a>
             
             </div>
           </div>
