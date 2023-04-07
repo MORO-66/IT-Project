@@ -16,7 +16,7 @@
             <a href="#footer" class="nav-link">about</a>
            </button>
           <button type="button" class="btn btn-outline-dark">
-            <a href="#cta" class="nav-link">download</a>
+            <a href="#cta" class="nav-link">Download</a>
           </button>
           </li>
         </ul>

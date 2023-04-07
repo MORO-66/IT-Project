@@ -32,7 +32,7 @@
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <button type="button" class="btn btn-outline-dark nav-button " >
-                <a href="./contact.php" class="nav-link ">Contact</a>
+                <a href="/contact.php" class="nav-link ">Contact</a>
               </button>
               <button type="button" class="btn btn-outline-dark ">
                 <a href="#footer" class="nav-link ">About</a>
