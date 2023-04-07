@@ -25,14 +25,14 @@
           <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a href="./index.php" class="navbar-brand">
+          <a href="C:\Users\Mohammed\Documents\GitHub\IT-Project\index.php" class="navbar-brand">
             <img src="./images/logo.png" alt="icon" style="width: 100px;">
           </a>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <button type="button" class="btn btn-outline-dark nav-button " >
-                <a href="/contact.php" class="nav-link ">Contact</a>
+                <a href="#footer" class="nav-link ">Contact</a>
               </button>
               <button type="button" class="btn btn-outline-dark ">
                 <a href="#footer" class="nav-link ">About</a>
@@ -216,7 +216,7 @@
     <!-- Footer -->
 
     <footer id="footer">
-      <i class="fa-brands fa-instagram" style="color: tomato;"></i>
+      <a href="https://www.instagram.com"><i class="fa-brands fa-instagram" style="color: tomato;"></i></a>
       <i class="fa-brands fa-twitter" style="color:aqua;"></i>
       <i class="fa-brands fa-google" style="color:rgb(0, 137, 205);"></i>
 

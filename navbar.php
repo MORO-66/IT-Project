@@ -10,10 +10,10 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <button type="button" class="btn btn-outline-dark " >
-            <a href="./contact.php" target="blank" class="nav-link">contact</a>
+            <a href="./contact.php" target="blank" class="nav-link">Contact</a>
           </button>
            <button type="button" class="btn btn-outline-dark">
-            <a href="#footer" class="nav-link">about</a>
+            <a href="#footer" class="nav-link">About</a>
            </button>
           <button type="button" class="btn btn-outline-dark">
             <a href="#cta" class="nav-link">Download</a>
