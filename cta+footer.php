@@ -1,7 +1,7 @@
   <!-- Call to Action -->
 
   <section id="cta">
-    <h3 class="h3">Download our Application for have a great sale.</h3>
+    <h3 class="h3">Download our Application for great discounts!</h3>
     <button class="btn btn-lg btn-dark btn-f " type="button"><i class="fa-brands fa-apple" style="padding-right: 3px;"></i>Download</button>
     <button class="btn btn-lg btn-outline-light btn-f" type="button"><i class="fa-brands fa-google-play" style="padding-right: 3px;"></i>Download</button>
   </section>
