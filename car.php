@@ -10,18 +10,21 @@
     <!--content-->
 
     <section id="content-image">
-        <div>
-            <img class="img-section" src="" alt="" width="42" height="52" style="vertical-align:top;margin:15px 20px">
-            <p>Car model: </p>
-            <p>Price: </p>
-            <p>About:<!--comment about the car --></p>
+    <div class="row">   
+        <div class="col-lg-5">
+        <img class="img-section" src="" alt="">
         </div>
-        
+    <div class="col-lg-5" >
+        <h4 class="text-dark">Car model:</h4>
+        <h4 class="text-dark">Car price:</h4>
+        <h4 class="text-dark">Car descreption:</h4><!--write abouts and add the image-->
+    </div>  
+    </div>    
     </section>
 
     <section id="slide-content">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-pause="hover" data-keyboard="true">
-        <div class="carousel-inner">
+        <div class="carousel-inner"><!--add the images-->
             <div class="carousel-item active">
             <img class="img-section" src="" alt="">
         </div>

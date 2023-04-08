@@ -2,18 +2,16 @@
 <html>
 
   <head>
-    <title>Qmotors</title>
+    <title>Q Motors</title>
     <?php include "head.php"; ?>
   </head>
-  <body>
-    <!-- js bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+  <body>
     <section id="title">
       <div class="container-fluid">
         <!-- Nav Bar -->
 
-        <?php include "navbar.php"; ?>
+        <?php $is_home=true; include "navbar.php"; ?>
 
 
         <!-- Title -->
@@ -170,7 +168,6 @@
     </section>
 
 
-    <!-- Call to Action -->
     <?php include "cta+footer.php"; ?>
 
 
