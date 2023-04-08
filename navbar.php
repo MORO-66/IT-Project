@@ -10,14 +10,17 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <button type="button" class="btn btn-outline-dark " >
-            <a href="./contact.php" target="blank" class="nav-link">Contact</a>
+            <a href="#" target="blank" class="nav-link">Contact</a>
+          </button>
+            <button type="button" class="btn btn-outline-dark " >
+            <a href="#" target="blank" class="nav-link">About</a>
           </button>
 
           <button type="button" class="btn btn-outline-dark">
             <a href="#cta" class="nav-link">Download</a>
           </button>
           <button type="button" class="btn btn-outline-dark">
-            <a href="/cars.php" class="nav-link">Content</a></button>
+            <a href="./cars.php" class="nav-link">Content</a></button>
           </li>
         </ul>
       </div>
