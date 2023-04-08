@@ -3,21 +3,23 @@
       <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a href="./index.php" class="navbar-brand">
+      <a href="./" class="navbar-brand">
         <img src="./images/logo.png" alt="icon" style="width: 100px;">
       </a>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <button type="button" class="btn btn-outline-dark " >
-            <a href="./contact.php" target="blank" class="nav-link">Contact</a>
+            <a href="./contact.html" target="blank" class="nav-link">contact</a>
           </button>
-
+            <button type="button" class="btn btn-outline-dark">
+            <a href="#footer" class="nav-link">about</a>
+            </button>
           <button type="button" class="btn btn-outline-dark">
-            <a href="#cta" class="nav-link">Download</a>
+            <a href="#cta" class="nav-link">download</a>
           </button>
           <button type="button" class="btn btn-outline-dark">
-            <a href="/cars.php" class="nav-link">Content</a></button>
+            <a href="./car.php" class="nav-link">cars</a></button>
           </li>
         </ul>
       </div>
