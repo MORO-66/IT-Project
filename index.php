@@ -2,16 +2,15 @@
 <html>
 
   <head>
-    <title>Q Motors</title>
+    <title>Qmotors</title>
     <?php include "head.php"; ?>
   </head>
-
   <body>
     <section id="title">
       <div class="container-fluid">
         <!-- Nav Bar -->
 
-        <?php $is_home=true; include "navbar.php"; ?>
+        <?php include "navbar.php"; ?>
 
 
         <!-- Title -->
@@ -168,6 +167,7 @@
     </section>
 
 
+    <!-- Call to Action -->
     <?php include "cta+footer.php"; ?>
 
 
