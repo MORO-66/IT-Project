@@ -33,7 +33,7 @@ h2{
     font-family: "montserrat-bold";
     font-size: 3rem;
     line-height: 1.5;
-    color:#00000030 !important;
+    color:#00000030 ;
 }
 ::-webkit-scrollbar{
     background-color: #0000001e;
@@ -139,6 +139,9 @@ h3{
     aspect-ratio: 3/2;/* set aspect ratio so that carousel doesn't change height when flipping */
     object-fit: cover;
 }
+.testimonial-text{
+    color: #fff !important;
+}
 
 
 em{
@@ -194,9 +197,6 @@ em{
     padding: 7% 22% 3%;
     color: #fff;
     font-family: 'Alkatra', 'cursive';
-}
-h2{
-    color: beige;
 }
 .btn-f{
     padding-right: 10px;
