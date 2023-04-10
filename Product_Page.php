@@ -8,7 +8,7 @@
     <?php include "navbar.php"; ?>
 
 
-<!--Cars-->
+    <!--Cars-->
   <div>
     <div>
       <div style="display: flex; justify-content: space-between; margin: 15px 5%; flex-wrap: wrap; gap: 10px;">
@@ -101,7 +101,8 @@
           </div>
         </div>
       </div>
-      
+    </div>
+  </div>
       <?php include "cta+footer.php"; ?>
   </body>
 </html>      
