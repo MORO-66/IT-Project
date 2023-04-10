@@ -32,6 +32,99 @@
       </div>
     </section>
 
+     <!--Cars-->
+  <div>
+    <div>
+      <div style="display: flex; justify-content: space-between; margin: 15px 5%; flex-wrap: wrap; gap: 10px;">
+        <div class="card__body">
+          <div class="card__body-cover">
+            <img src="/images/Winner-Large-Car-Ford-Mustang-Mach-E.webp" alt="">
+          </div>
+          <header class="card__body-header">
+            <p class="card__body-header-subtitle">Nissan Mustang : A Car that Every Woman need</p>
+          </header>
+          <h2>20000$</h2>
+        </div>
+        <div class="card__body">
+          <div class="card__body-cover">
+            <img src="\images\OIP (1).jpg" alt="">
+          </div>
+          <header class="card__body-header">
+            <p class="card__body-header-subtitle">Rolls Royce Phantom : A Work Of Art</p>
+          </header>
+          <h2>30000$</h2>
+        </div>
+        <div class="card__body">
+          <div class="card__body-cover">
+            <img src="\images\OIP (2).jpg" alt="">
+          </div>
+          <header class="card__body-header">
+            <p class="card__body-header-subtitle">Porsche 911 Carrera : Engineered for magic </p>
+          </header>
+          <h2>25000$</h2>
+        </div>
+        <div class="card__body">
+          <div class="card__body-cover">
+            <img src="\images\OIP (4).jpg" alt="">
+          </div>
+          <header class="card__body-header">
+            <p class="card__body-header-subtitle">Mercedes Benz A-Class : The Peak Of Luxury</p>
+          </header>
+          <h2>27500$</h2>
+        </div>
+        <div class="card__body">
+          <div class="card__body-cover">
+            <img src="/images/OIP (5).jpg" alt="">
+          </div>
+          <header class="card__body-header">
+            <p class="card__body-header-subtitle">Mopar Jeep : Proud Sponsors Of Mud</p>
+          </header>
+          <h2>26500$</h2>
+        </div>
+        <div>
+          <div class="card__body">
+            <div class="card__body-cover">
+              <img src="/images/R (1).jpg" alt="">
+            </div>
+            <header class="card__body-header">
+              <p class="card__body-header-subtitle">MG ZS : Take Charge </p>
+            </header>
+            <h2>150$ (Only For Rent)</h2>
+          </div>
+        </div>
+        <div>
+          <div class="card__body">
+            <div class="card__body-cover">
+              <img src="/images/OIP (6).jpg" alt="">
+            </div>
+            <header class="card__body-header">
+              <p class="card__body-header-subtitle"> Audi Prollogue Avant : Best Midrange Car</p>
+            </header>
+          <h2>11000$</h2>
+          </div>
+        </div>
+        <div>
+          <div class="card__body">
+            <div class="card__body-cover">
+              <img src="\images\bmw2.jpg" alt="">
+            </div>
+            <header class="card__body-header">
+              <p class="card__body-header-subtitle">BMW : Best Seller Car</p>
+            </header>
+           <h2>28250$</h2>
+          </div>
+        </div><div>
+          <div class="card__body">
+            <div class="card__body-cover">
+              <img src="/images/R (3).jpg" alt="">
+            </div>
+            <header class="card__body-header">
+              <p class="card__body-header-subtitle">Toyota CHRm :Best Rental Car</p>
+            </header>
+            <h2>600$ (Only For Rent )</h2>
+          </div>
+        </div>
+      </div>
 
     
     
