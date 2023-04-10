@@ -1,0 +1,93 @@
+.card {
+    --background: #ffffff;
+    --background-checkbox: #0004ff;
+    --background-image: #fff, rgba(38, 0, 175, 0.2);
+    --text-color: #1a1616;
+    --text-headline: #000;
+    --card-shadow: #0082ff;
+    --card-height: 190px;
+    --card-width: 190px;
+    --card-radius: 12px;
+    --header-height: 47px;
+    --blend-mode: overlay;
+    --transition: 0.15s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+
+  
+  .card__body {
+    display: grid;
+    background-color: #fff;
+    grid-auto-rows: calc(var(--card-height) - var(--header-height)) auto;
+    height: var(--card-height);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: var(--shadow, 0 4px 4px 0 rgba(0, 0, 0, 0.02));
+    -webkit-transition: box-shadow var(--transition), -webkit-transform var(--transition);
+    transition: box-shadow var(--transition), -webkit-transform var(--transition);
+    transition: transform var(--transition), box-shadow var(--transition);
+    transition: transform var(--transition), box-shadow var(--transition), -webkit-transform var(--transition);
+    -webkit-transform: scale(var(--scale, 1)) translateZ(0);
+    transform: scale(var(--scale, 1)) translateZ(0);
+  }
+  
+  .card__body:active {
+    --scale: 0.96;
+  }
+  
+  .card__body-cover {
+    --c-border: var(--card-radius) var(--card-radius) 0 0;
+    --c-width: 50%;
+    --c-height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card__body-cover img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    width: 400px;
+  }
+  
+  .card__body-cover-image {
+    width: var(--c-width);
+    height: var(--c-height);
+    -o-object-fit: contain;
+    object-fit: contain;
+    aspect-ratio: 16/9;
+    border-radius: var(--c-border);
+    -webkit-filter: var(--filter-bg, grayscale(1));
+    filter: var(--filter-bg, grayscale(1));
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, var(--x-y1, 100% 90%), var(--x-y2, 67% 83%), var(--x-y3, 33% 90%), var(--x-y4, 0% 85%));
+    clip-path: polygon(0% 0%, 100% 0%, var(--x-y1, 100% 90%), var(--x-y2, 67% 83%), var(--x-y3, 33% 90%), var(--x-y4, 0% 85%));
+  }
+  
+  .card__body-header {
+    height: var(--header-height);
+    background: var(--background);
+    padding: 0 10px 10px 10px;
+  }
+  
+
+  
+  .card__body-header-subtitle {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .card__input {
+    position:absolute;
+    display:grid;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    
+  }
