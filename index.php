@@ -125,8 +125,8 @@
           </div>
         </div>
       </div>
-
-    
+    </div>
+  </div>
     
     <!-- Features -->
 
