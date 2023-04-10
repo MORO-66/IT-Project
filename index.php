@@ -39,8 +39,8 @@ check_login($db)
                     }else{
                        
                      
-                        echo "   <a href='./Sign-Up.php' target='_blank'><button type='button' class='btn btn-lg btn-dark download' >Sign up</button></a>
-            <a href='./Login.php' target='blank'><button  type='button'  class='btn btn-lg  btn-outline-light download'>Sign in</button></a>";
+                        echo "   <a href='./signup.php' target='_blank'><button type='button' class='btn btn-lg btn-dark download' >Sign up</button></a>
+            <a href='./login.php' target='blank'><button  type='button'  class='btn btn-lg  btn-outline-light download'>Sign in</button></a>";
                         
                         
                     }
