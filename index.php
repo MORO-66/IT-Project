@@ -10,7 +10,7 @@
       <div class="container-fluid">
         <!-- Nav Bar -->
 
-        <?php include "navbar.php"; ?>
+        <?php $is_home=true; include "navbar.php"; ?>
 
 
         <!-- Title -->
