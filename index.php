@@ -38,7 +38,7 @@
         <div style="display: flex; justify-content: space-between; margin: 15px 5%; flex-wrap: wrap; gap: 10px;">
           <div class="card__body">
             <div class="card__body-cover">
-              <img src="./images/Winner-Large-Car-Ford-Mustang-Mach-E.webp" alt="">
+              <img src="./images/WhatsApp Image 2023-04-10 at 12.25.38 PM.jpeg" alt="">
             </div>
             <header class="card__body-header">
               <p class="card__body-header-subtitle">Nissan Mustang : A Car that Every Woman need</p>
@@ -47,7 +47,7 @@
           </div>
           <div class="card__body">
             <div class="card__body-cover">
-              <img src="./images/OIP (1).jpg" alt="">
+              <img src="./images/WhatsApp Image 2023-04-10 at 12.25.39 PM (1).jpeg" alt="">
             </div>
             <header class="card__body-header">
               <p class="card__body-header-subtitle">Rolls Royce Phantom : A Work Of Art</p>
@@ -56,7 +56,7 @@
           </div>
           <div class="card__body">
             <div class="card__body-cover">
-              <img src="./images/OIP (2).jpg" alt="">
+              <img src="./images/WhatsApp Image 2023-04-10 at 12.25.39 PM (2).jpeg" alt="">
             </div>
             <header class="card__body-header">
               <p class="card__body-header-subtitle">Porsche 911 Carrera : Engineered for magic </p>
@@ -65,7 +65,7 @@
           </div>
           <div class="card__body">
             <div class="card__body-cover">
-              <img src="./images/IP (4).jpg" alt="">
+              <img src="./images/WhatsApp Image 2023-04-10 at 12.25.39 PM.jpeg" alt="">
             </div>
             <header class="card__body-header">
               <p class="card__body-header-subtitle">Mercedes Benz A-Class : The Peak Of Luxury</p>
@@ -74,7 +74,7 @@
           </div>
           <div class="card__body">
             <div class="card__body-cover">
-              <img src="./images/OIP (5).jpg" alt="">
+              <img src="./images/WhatsApp Image 2023-04-10 at 12.25.40 PM.jpeg" alt="">
             </div>
             <header class="card__body-header">
               <p class="card__body-header-subtitle">Mopar Jeep : Proud Sponsors Of Mud</p>
@@ -84,7 +84,7 @@
           <div>
             <div class="card__body">
               <div class="card__body-cover">
-                <img src="./images/R (1).jpg" alt="">
+                <img src="./images/WhatsApp Image 2023-04-10 at 12.25.41 PM (1).jpeg" alt="">
               </div>
               <header class="card__body-header">
                 <p class="card__body-header-subtitle">MG ZS : Take Charge </p>
@@ -95,7 +95,7 @@
           <div>
             <div class="card__body">
               <div class="card__body-cover">
-                <img src="./images/OIP (6).jpg" alt="">
+                <img src="./images/WhatsApp Image 2023-04-10 at 12.25.41 PM.jpeg" alt="">
               </div>
               <header class="card__body-header">
                 <p class="card__body-header-subtitle"> Audi Prollogue Avant : Best Midrange Car</p>
@@ -106,7 +106,7 @@
           <div>
             <div class="card__body">
               <div class="card__body-cover">
-                <img src="./images/bmw2.jpg" alt="">
+                <img src="./images/WhatsApp Image 2023-04-10 at 12.25.42 PM (1).jpeg" alt="">
               </div>
               <header class="card__body-header">
                 <p class="card__body-header-subtitle">BMW : Best Seller Car</p>
@@ -116,7 +116,7 @@
           </div><div>
             <div class="card__body">
               <div class="card__body-cover">
-                <img src="./images/R (3).jpg" alt="">
+                <img src="./images/WhatsApp Image 2023-04-10 at 12.25.42 PM.jpeg" alt="">
               </div>
               <header class="card__body-header">
                 <p class="card__body-header-subtitle">Toyota CHRm :Best Rental Car</p>
