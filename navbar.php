@@ -7,6 +7,16 @@
         <img src="./images/logo.png" alt="icon" style="width: 100px;">
       </a>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <?php
+                    
+                    if(isset($_SESSION['name'])){
+                        
+                        echo " <a href= 'Log-out.php'>log out</a>";
+                        
+                    }
+    
+                ?>
+          
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <button type="button" class="btn btn-outline-dark " >

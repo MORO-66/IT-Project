@@ -1,3 +1,9 @@
+<?php
+
+include "Functions.php";
+check_login($db)
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -22,8 +28,25 @@
             
           <h1 class="n">Buy and rent best Cars in QMOTORS.</h1>
             <div class="bottons ">
-            <a href="./signup.php" target="_blank"><button type="button" class="btn btn-lg btn-dark download" >Sign up</button></a>
-            <a href="./login.php" target="blank"><button  type="button"  class="btn btn-lg  btn-outline-light download">Sign in</button></a>
+            <?php
+                      
+                    if(isset($_SESSION['name'])){
+                         
+                        echo "<div class = 'Welcome_message' style = '    color: #eedad3d4;
+    font-size: 30px;'> hello Mr . " . $_SESSION['name'] . "</div>";
+                            
+                        
+                    }else{
+                       
+                     
+                        echo "   <a href='./signup.php' target='_blank'><button type='button' class='btn btn-lg btn-dark download' >Sign up</button></a>
+            <a href='./login.php' target='blank'><button  type='button'  class='btn btn-lg  btn-outline-light download'>Sign in</button></a>";
+                        
+                        
+                    }
+    
+    
+                ?>
             
             </div>
           </div>
