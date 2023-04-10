@@ -2,51 +2,15 @@
 <html>
 
   <head>
-    <meta charset="utf-8">
     <title>Qmotors</title>
-    <link rel="icon" href="./images/LOGO.ico">
-
-    <!--fonts awesome-->
-    <link rel="stylesheet" href="./css/all.min.css">
-    <!--css stylesheets-->
-    <link rel="stylesheet" href="css/project-A.css">
-    <link rel="stylesheet" href="./css/bootstrap.css">
-
+    <?php include "head.php"; ?>
   </head>
-
   <body>
-    <!-- js bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
     <section id="title">
       <div class="container-fluid">
         <!-- Nav Bar -->
 
-        <nav class="navbar navbar-expand-lg navbar-home">
-          
-          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a href="./project-A.html" class="navbar-brand">
-            <img src="./images/logo.png" alt="icon" style="width: 100px;">
-          </a>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <button type="button" class="btn btn-outline-dark " >
-                <a href="./contact.html" class="nav-link">contact</a>
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <a href="#footer" class="nav-link">about</a>
-              </button>
-              <button type="button" class="btn btn-outline-dark">
-                <a href="#cta" class="nav-link">download</a>
-              </button>
-              </li>
-            </ul>
-          </div>
-      
-        </nav>
+        <?php $is_home=true; include "navbar.php"; ?>
 
 
         <!-- Title -->
@@ -58,8 +22,8 @@
             
           <h1 class="n">Buy and rent best Cars in QMOTORS.</h1>
             <div class="bottons ">
-            <a href="./signup.html" target="_blank"><button type="button" class="btn btn-lg btn-dark download" >Sign up</button></a>
-            <a href="./login.html" target="blank"><button  type="button"  class="btn btn-lg  btn-outline-light download">Sign in</button></a>
+            <a href="./signup.php" target="_blank"><button type="button" class="btn btn-lg btn-dark download" >Sign up</button></a>
+            <a href="./login.php" target="blank"><button  type="button"  class="btn btn-lg  btn-outline-light download">Sign in</button></a>
             
             </div>
           </div>
@@ -191,29 +155,29 @@
         <h1>Best sales cars</h1>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <h2 >nissan of a7 has better engine on galaxy.</h2>
+            <h2 class="testimonial-text">nissan of a7 has better engine on the galaxy.</h2>
             <img class="img-section" src="./images/wallpaperflare.com_wallpaper (4).jpg" alt="dog-profile">
-            <em>NISSAN</em>
+            <em>FIRRARI</em>
           </div>
           <div class="carousel-item">
             <h2 class="testimonial-text ">Having best and beautiful fast experience.</h2>
             <img class="testimonial-image img-section" src="./images/best_luxury_car.jpg" alt="lady-profile">
-            <em>ferrari</em>
+            <em>Rolls-Royce </em>
           </div>
           <div class="carousel-item">
             <h2 class="testimonial-text">Having best and beautiful fast experience.</h2>
             <img class="testimonial-image img-section" src="./images/bmw.jpg" alt="lady-profile">
-            <em class="col-lg-6">ferrari </em>
+            <em class="col-lg-6">BMW </em>
           </div>
           <div class="carousel-item">
             <h2 class="testimonial-text">Having best and beautiful fast experience.</h2>
             <img class="testimonial-image img-section" src="./images/bmw2.jpg" alt="lady-profile">
-            <em>ferrari</em>
+            <em>BMW 840i</em>
           </div>
           <div class="carousel-item">
             <h2 class="testimonial-text">Having best and beautiful fast experience.</h2>
             <img class="testimonial-image img-section" src="./images/car-nissan-race-cars-road-wallpaper-preview.jpg" alt="lady-profile">
-            <em>ferrari</em>
+            <em>Nissan GTR</em>
           </div>
           
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -297,26 +261,7 @@
 
 
     <!-- Call to Action -->
-
-    <section id="cta">
-
-      <h3 class="h3">Download our Application for have a great sale.</h3>
-      <button class="btn btn-lg btn-dark btn-f " type="button"><i class="fa-brands fa-apple" style="padding-right: 3px;"></i>Download</button>
-      <button class="btn btn-lg btn-outline-light btn-f" type="button"><i class="fa-brands fa-google-play" style="padding-right: 3px;"></i>Download</button>
-
-    </section>
-
-
-    <!-- Footer -->
-
-    <footer id="footer">
-      <i class="fa-brands fa-instagram" style="color: tomato;"></i>
-      <i class="fa-brands fa-twitter" style="color:aqua;"></i>
-      <i class="fa-brands fa-google" style="color:rgb(0, 137, 205);"></i>
-
-      <p class="p">© Copyright Qmotors thats for jokes</p>
-
-    </footer>
+    <?php include "cta+footer.php"; ?>
 
 
   </body>
