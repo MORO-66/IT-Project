@@ -19,7 +19,7 @@
             <input class="input form-control" type="text" name="Frist name" value="" required>
             <input class="input form-control" type="text" name="Last name" value="" required>
             <input class="input form-control" type="email" name="E_mail" value="" required>
-            <input class="input form-control" type="" name="Feedback" value="" required>
+            <textarea name="Feedback" rows="30" cols="20"></textarea>
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>
     <?php include "cta+footer.php"; ?>
