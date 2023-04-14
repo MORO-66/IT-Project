@@ -11,14 +11,14 @@
 
         <section id="content-image">
             <div class="row">
-            <div class="col-lg-6">
-                <img class="img-section" src="./images/bmw.jpg" alt="" width="42" height="52" style="vertical-align:top;margin:15px 20px">
-            </div>
-            <div class="col-lg-6">
-                <p>Car model: </p>
-                <p>Price: </p>
-                <p>About:<!--comment about the car --></p>
-            </div>
+                <div class="col-lg-6">
+                    <img class="img-section" src="./images/bmw.jpg" alt="" width="42" height="52" style="vertical-align:top;margin:15px 20px">
+                </div>
+                <div class="col-lg-6" >
+                    <p>Car model: </p>
+                    <p>Price: </p>
+                    <p>About:<!--comment about the car --></p>
+                </div>
             </div>
         </section>
 
@@ -34,7 +34,7 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img class="img-section" src="./images/bmw2.jpg" alt="">
+                <img class="img-section" src="./images/WhatsApp Image 2023-04-10 at 12.25.42 PM.jpeg" alt="">
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
