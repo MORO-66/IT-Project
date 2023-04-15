@@ -1,7 +1,6 @@
 <?php
       session_start();
      //connect database
-   
     include "connect_db.php";
   //  include "Functions.php";
           
@@ -9,13 +8,11 @@
         
         $email = $_POST['email'];
         $pass = $_POST['password'];
-     
          $sql = "SELECT * FROM data WHERE Email = '$email';";
     
   if(!empty($email) && !empty($pass) &&  !is_numeric($email)){
 
               $result = mysqli_query($db, $sql);
-               
               if($result && mysqli_num_rows($result) > 0){
               $userdata = mysqli_fetch_assoc($result);
       
@@ -34,7 +31,7 @@
                 }
                   
               }else {
-                 echo "invalid username ";
+                echo "invalid username ";
               }
         }
 
@@ -44,7 +41,7 @@
     }
     //check if the data exist in database
     
-   
+
 
 
 
