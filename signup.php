@@ -50,7 +50,6 @@
             <label class="label">E-mail: </label><br>
             <label class="label">NEW Password: </label><br>
             <label class="label">confirm Password: </label>
-           
           </div>
           
           <div class=" col-lg-6 col-md-6 col-sm-4 ">
