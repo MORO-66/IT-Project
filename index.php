@@ -244,7 +244,7 @@ check_login($db)
               <p>fast</p>
               <p>kold bearing</p>
               <p>nice look</p>
-              <button class="btn btn-lg btn-block btn-outline-dark " type="button">Sign Up</button>
+              <button class="btn btn-lg btn-block btn-outline-dark " type="button"><a href = "SignUp.php">Sign Up</a></button>
             </div>
           </div>
         </div>
@@ -258,7 +258,7 @@ check_login($db)
               <p>fast</p>
               <p>kold bearing</p>
               <p>nice look</p>
-              <button class="btn btn-lg btn-block btn-outline-dark " type="button">Sign Up</button>
+              <button class="btn btn-lg btn-block btn-outline-dark " type="button"><a href = "SignUp.php">Sign Up</a></button>
             </div>
           </div>
         </div>
@@ -272,7 +272,7 @@ check_login($db)
               <p>fast</p>
               <p>kold bearing</p>
               <p>nice look</p>
-              <button class="btn btn-lg btn-block btn-outline-dark " type="button">Sign Up</button>
+              <button class="btn btn-lg btn-block btn-outline-dark " type="button"><a href = "SignUp.php">Sign Up</a></button>
             </div>
           </div>
         </div>
