@@ -17,11 +17,7 @@ function check_login($db){
                 
             }
         
-    }else{
-        
-       
-        
-    }        
+    }
     
         
 }
