@@ -54,19 +54,30 @@ check_login($db)
         </div>
       </div>
     </section>
-
+                    <div class = "Latest-Cars" style = "
+    width: 90%;
+    height: 52px;
+    line-height: 2;
+    font-size: 22px;
+    background: #18221c;
+    color: #fff;
+    margin: 0 auto;
+">
+                        Latest Added Cars :
+                  </div>
     <!--Cars-->
     <div>
       <div>
         <div style="display: flex; justify-content: space-between; margin: 15px 5%; flex-wrap: wrap; gap: 10px;">
         <?php
 
-                    $sql = "SELECT Name , Photo , Price From car LIMIT 6";
+                    $sql = "SELECT Name , Photo , Price , Id From car LIMIT 6";
                     $result = mysqli_query($db , $sql);
 
                     while($row = mysqli_fetch_assoc($result)){
                         
                       echo "
+                      <a href = 'cars.php?Id=" . $row['Id']. "' style = 'text-decoration: none;' >
                       <div class='card__body'>
                       <div class='card__body-cover'>
                         <img src='".$row['Photo']."' alt=''>
@@ -76,7 +87,7 @@ check_login($db)
                       </header>
                       <h2>".$row['Price']. "$" . "</h2>
                     </div>
-                      
+                      </a>
                       
                       ";
 
@@ -86,6 +97,15 @@ check_login($db)
                     ?>  
         </div>
       </div>
+            <div class = "show-more" style = '       width: 11%;
+    margin: 0 auto;
+    height: 41px;
+    background: #18221c;
+    border-radius: 18px;
+    font-size: 23px;
+    margin-bottom: 10px;'><a href = "Product_Page.php" style = '    color: #fff;
+    list-style: none;
+    text-decoration: none;'>Show More</a></div>
     </div>
     
     <!-- Features -->
