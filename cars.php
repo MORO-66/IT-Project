@@ -1,3 +1,9 @@
+<?php
+
+include "Functions.php";
+check_login($db)
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,19 +15,34 @@
 
         <?php include "navbar.php"; ?>
         <!--content-->
-
-        <section id="content-image">
-            <div class="row">
-                <div class="col-lg-6">
-                    <img class="img-section" src="./images/bmw.jpg" alt="">
+        <?php
+           
+            $Car_Id =  $_GET['Id'];
+            $sql = "SELECT * FROM car WHERE Id = '$Car_Id'";
+            $result = mysqli_query($db , $sql);
+            $row = mysqli_fetch_assoc($result);
+            
+            echo "
+            <section id='content-image'>
+            <div class='row'>
+                <div class='col-lg-6'>
+                    <img class='img-section' src='". $row['photo'] ."' alt=''>
                 </div>
-                <div class="col-lg-6" style="text-align: left;" >
-                    <h3>Car model:</h3><br> 
-                    <h3>Price: </h3><br>
-                    <h3>About:<!--comment about the car --></h3>
+                <div class='col-lg-6' style='text-align: left;' >
+                    <h3>Car model: " . $row['Name'] . "</h3><br> 
+                    <h3>Price: ". $row['Price'] ."$</h3><br>
+                    <h3>About:<P>". $row['Description'] . " </p></h3>
                 </div>
             </div>
         </section>
+            
+            
+            ";
+
+
+
+        ?>
+        
         <section>
         <div class="slideshow-container">
 

@@ -54,101 +54,58 @@ check_login($db)
         </div>
       </div>
     </section>
-
+                    <div class = "Latest-Cars" style = "
+    width: 90%;
+    height: 52px;
+    line-height: 2;
+    font-size: 22px;
+    background: #18221c;
+    color: #fff;
+    margin: 0 auto;
+">
+                        Latest Added Cars :
+                  </div>
     <!--Cars-->
     <div>
       <div>
         <div style="display: flex; justify-content: space-between; margin: 15px 5%; flex-wrap: wrap; gap: 10px;">
-          <div class="card__body">
-            <div class="card__body-cover">
-              <img src="./images/WhatsApp Image 2023-04-10 at 12.25.38 PM.jpeg" alt="">
-            </div>
-            <header class="card__body-header">
-              <p class="card__body-header-subtitle">Nissan Mustang : A Car that Every Woman need</p>
-            </header>
-            <h2>20000$</h2>
-          </div>
-          <div class="card__body">
-            <div class="card__body-cover">
-              <img src="./images/WhatsApp Image 2023-04-10 at 12.25.39 PM (1).jpeg" alt="">
-            </div>
-            <header class="card__body-header">
-              <p class="card__body-header-subtitle">Rolls Royce Phantom : A Work Of Art</p>
-            </header>
-            <h2>30000$</h2>
-          </div>
-          <div class="card__body">
-            <div class="card__body-cover">
-              <img src="./images/WhatsApp Image 2023-04-10 at 12.25.39 PM (2).jpeg" alt="">
-            </div>
-            <header class="card__body-header">
-              <p class="card__body-header-subtitle">Porsche 911 Carrera : Engineered for magic </p>
-            </header>
-            <h2>25000$</h2>
-          </div>
-          <div class="card__body">
-            <div class="card__body-cover">
-              <img src="./images/WhatsApp Image 2023-04-10 at 12.25.39 PM.jpeg" alt="">
-            </div>
-            <header class="card__body-header">
-              <p class="card__body-header-subtitle">Mercedes Benz A-Class : The Peak Of Luxury</p>
-            </header>
-            <h2>27500$</h2>
-          </div>
-          <div class="card__body">
-            <div class="card__body-cover">
-              <img src="./images/WhatsApp Image 2023-04-10 at 12.25.40 PM.jpeg" alt="">
-            </div>
-            <header class="card__body-header">
-              <p class="card__body-header-subtitle">Mopar Jeep : Proud Sponsors Of Mud</p>
-            </header>
-            <h2>26500$</h2>
-          </div>
-          <div>
-            <div class="card__body">
-              <div class="card__body-cover">
-                <img src="./images/WhatsApp Image 2023-04-10 at 12.25.41 PM (1).jpeg" alt="">
-              </div>
-              <header class="card__body-header">
-                <p class="card__body-header-subtitle">MG ZS : Take Charge </p>
-              </header>
-              <h2>150$ (Only For Rent)</h2>
-            </div>
-          </div>
-          <div>
-            <div class="card__body">
-              <div class="card__body-cover">
-                <img src="./images/WhatsApp Image 2023-04-10 at 12.25.41 PM.jpeg" alt="">
-              </div>
-              <header class="card__body-header">
-                <p class="card__body-header-subtitle"> Audi Prollogue Avant : Best Midrange Car</p>
-              </header>
-            <h2>11000$</h2>
-            </div>
-          </div>
-          <div>
-            <div class="card__body">
-              <div class="card__body-cover">
-                <img src="./images/WhatsApp Image 2023-04-10 at 12.25.42 PM (1).jpeg" alt="">
-              </div>
-              <header class="card__body-header">
-                <p class="card__body-header-subtitle">BMW : Best Seller Car</p>
-              </header>
-            <h2>28250$</h2>
-            </div>
-          </div><div>
-            <div class="card__body">
-              <div class="card__body-cover">
-                <img src="./images/WhatsApp Image 2023-04-10 at 12.25.42 PM.jpeg" alt="">
-              </div>
-              <header class="card__body-header">
-                <p class="card__body-header-subtitle">Toyota CHRm :Best Rental Car</p>
-              </header>
-              <h2>600$ (Only For Rent )</h2>
-            </div>
-          </div>
+        <?php
+
+                    $sql = "SELECT Name , Photo , Price , Id From car LIMIT 6";
+                    $result = mysqli_query($db , $sql);
+
+                    while($row = mysqli_fetch_assoc($result)){
+                        
+                      echo "
+                      <a href = 'cars.php?Id=" . $row['Id']. "' style = 'text-decoration: none;' >
+                      <div class='card__body'>
+                      <div class='card__body-cover'>
+                        <img src='".$row['Photo']."' alt=''>
+                      </div>
+                      <header class='card__body-header'>
+                        <p class='card__body-header-subtitle'>".$row['Name']."</p>
+                      </header>
+                      <h2>".$row['Price']. "$" . "</h2>
+                    </div>
+                      </a>
+                      
+                      ";
+
+
+                    }
+
+                    ?>  
         </div>
       </div>
+            <div class = "show-more" style = '       width: 11%;
+    margin: 0 auto;
+    height: 41px;
+    background: #18221c;
+    border-radius: 18px;
+    font-size: 23px;
+    margin-bottom: 10px;'><a href = "Product_Page.php" style = '    color: #fff;
+    list-style: none;
+    text-decoration: none;'>Show More</a></div>
     </div>
     
     <!-- Features -->
@@ -244,7 +201,7 @@ check_login($db)
               <p>fast</p>
               <p>kold bearing</p>
               <p>nice look</p>
-              <button class="btn btn-lg btn-block btn-outline-dark " type="button">Sign Up</button>
+              <button class="btn btn-lg btn-block btn-outline-dark " type="button"><a href = "SignUp.php">Sign Up</a></button>
             </div>
           </div>
         </div>
@@ -258,7 +215,7 @@ check_login($db)
               <p>fast</p>
               <p>kold bearing</p>
               <p>nice look</p>
-              <button class="btn btn-lg btn-block btn-outline-dark " type="button">Sign Up</button>
+              <button class="btn btn-lg btn-block btn-outline-dark " type="button"><a href = "SignUp.php">Sign Up</a></button>
             </div>
           </div>
         </div>
@@ -272,7 +229,7 @@ check_login($db)
               <p>fast</p>
               <p>kold bearing</p>
               <p>nice look</p>
-              <button class="btn btn-lg btn-block btn-outline-dark " type="button">Sign Up</button>
+              <button class="btn btn-lg btn-block btn-outline-dark " type="button"><a href = "SignUp.php">Sign Up</a></button>
             </div>
           </div>
         </div>

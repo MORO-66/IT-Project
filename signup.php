@@ -16,7 +16,7 @@
 
       
         if(!empty($user) && !empty($pass) && !empty($BirthDay) &&  !is_numeric($user) && !is_numeric($name) && !is_numeric($email)){
-              $sql = "INSERT INTO Data (Name,Username,Email , Password, BirthDay , Gender) VALUES ('$name', '$user', '$email' , '$pass' , '$BirthDay' , '$gender'); ";
+              $sql = "INSERT INTO Users (Name,Username,Email , Password, BirthDay , Gender) VALUES ('$name', '$user', '$email' , '$pass' , '$BirthDay' , '$gender'); ";
               $result = mysqli_query( $db, $sql);
            
                 header("Location: Login.php");

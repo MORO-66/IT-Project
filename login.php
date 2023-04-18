@@ -8,7 +8,7 @@
         
         $email = $_POST['email'];
         $pass = $_POST['password'];
-         $sql = "SELECT * FROM data WHERE Email = '$email';";
+         $sql = "SELECT * FROM users WHERE Email = '$email';";
     
   if(!empty($email) && !empty($pass) &&  !is_numeric($email)){
 
@@ -79,7 +79,7 @@
           </div>
         </div>
       </div>
-      <button  class="btn"><a href = "Sign-Up.php">sign up</a></button>
+      <button  class="btn"><a href = "SignUp.php">sign up</a></button>
       <button type="submit" class="btn btn-primary">Sign in</button>
       
     </form>
