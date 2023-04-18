@@ -8,6 +8,8 @@
     margin: 15px 20px;
     height: 200px;
     width: 300px;
+    aspect-ratio: 3/2;/* set aspect ratio so that carousel doesn't change height when flipping */
+
 }
 #content_image.car-text{
     padding-right: 400px;

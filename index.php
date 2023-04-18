@@ -136,7 +136,7 @@ check_login($db)
         <div class="carousel-inner">
           <div class="carousel-item active">
             <h2 class="testimonial-text">nissan of a7 has better engine on the galaxy.</h2>
-            <img class="img-section" src="./images/wallpaperflare.com_wallpaper (4).jpg" alt="dog-profile">
+            <img class="img-section " src="./images/wallpaperflare.com_wallpaper (4).jpg" alt="dog-profile">
             <em>FIRRARI</em>
           </div>
           <div class="carousel-item">
