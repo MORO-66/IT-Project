@@ -12,7 +12,7 @@
     <h3>Thank you for using the QMotors on your journey to modern marketing how can we do better? </h3>
     <p>let us know your thoughts</p>
     <div class="row row-signup"> 
-        <div class=" col-lg-6 col-md-6 col-sm-8"> 
+        <div class=" col-lg-6 col-md-6 col-sm-8" style=" padding-left: 400px;width: 812px;"> 
             <label class="label">Frist name: </label><input class="input form-control" type="text" name="Frist name" value="" required><br>
             <label class="label">Last name: </label><input class="input form-control" type="text" name="Last name" value="" required><br>
             <label class="label">E-mail: </label><input class="input form-control" type="email" name="E_mail" value="" required><br>

@@ -5,7 +5,7 @@ function check_login($db){
             
     if(isset($_SESSION['User_name'])){
        $user1 = $_SESSION['User_name'];
-            $sql1 = "SELECT * FROM data WHERE 'UserName' = '$user1' LIMIT 1";
+            $sql1 = "SELECT * FROM users WHERE 'UserName' = '$user1' LIMIT 1";
             
             $result = mysqli_query($db  , $sql1);
             
@@ -17,11 +17,7 @@ function check_login($db){
                 
             }
         
-    }else{
-        
-       
-        
-    }        
+    }
     
         
 }
