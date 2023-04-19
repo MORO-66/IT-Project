@@ -8,7 +8,7 @@ check_login($db)
 <html lang="en">
     <head>
         <?php include "head.php"; ?>
-        <link rel="stylesheet" href="./css/cars.css">
+        <link rel="stylesheet" href="/css/cars.css">
         <title>Qmotors</title>
     </head>
     <body>
@@ -16,7 +16,7 @@ check_login($db)
         <?php include "navbar.php"; ?>
         <!--content-->
         <?php
-           
+        
             $Car_Id =  $_GET['Id'];
             $sql = "SELECT * FROM car WHERE Id = '$Car_Id'";
             $result = mysqli_query($db , $sql);
@@ -24,15 +24,15 @@ check_login($db)
             
             echo "
             <section id='content-image'>
-            <div class='row'>
+            <div class='row' style='background-color:#ffffff47' ;>
                 <div class='col-lg-6'>
                     <img class='img-section' src='". $row['photo'] ."' alt=''>
                 </div>
                 <div class='col-lg-6' style='text-align: left;' >
-                    <h3>Car model: " . $row['Name'] . "</h3><br> 
-                    <h3>Price: ". $row['Price'] ."$</h3><br>
-                    <h3>About:<P>". $row['Description'] . " </p></h3>
+                    <h3 >Car model: " . $row['Name'] . "</h3><br> 
+                    <h3 >Price: ". $row['Price'] ."$</h3><br>
                 </div>
+                <h3 >About:<P>". $row['Description'] . " </p></h3>
             </div>
         </section>
             
@@ -43,22 +43,22 @@ check_login($db)
 
         ?>
         
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"  data-keyboard="true">
+        <div  id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-keyboard="true" style='background-color:#ffffff47' >
   <div class="carousel-inner">
     <div class="carousel-item active">
-    <img class="testimonial-image img-section col-lg-2" src="./images/WhatsApp Image 2023-04-10 at 12.25.38 PM.jpeg" style="width:100%">
-            <div class="text col-lg-2">Caption Text</div> 
+    <img class="testimonial-image img-section col-lg-2" src="./images/WhatsApp Image 2023-04-10 at 12.25.38 PM.jpeg" style="width:50%">
+            <div class="text"><h4>Caption Text</h4></div> 
         </div>
     <div class="carousel-item">
-    <img class="testimonial-image img-section" src="./images/bmw.jpg" style="width:100%">
-            <div class="text">Caption Two</div>    </div>
+    <img class="testimonial-image img-section" src="./images/bmw.jpg" style="width:50%">
+            <div class="text"><h4>Caption Text</h4></div>    </div>
     <div class="carousel-item">
-    <img class="testimonial-image img-section" src="./images/bmw2.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
+    <img class="testimonial-image img-section" src="./images/bmw2.jpg" style="width:50%">
+            <div class="text"><h4>Caption Text</h4></div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" >
+    <span  class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">

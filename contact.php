@@ -3,10 +3,11 @@
 <head>
     <title>Q Motors</title>
     <?php include "head.php"; ?>
+    <link rel="stylesheet" href="/css/contact.css">
 </head>
 <body>
     <?php include "navbar.php"; ?>
-    <div style="text-align: center; background-color:hsla(0, 3%, 14%, 0.456); margin: 7% 15%; padding-bottom: 10%;">
+    <div style="text-align: center; color:aliceblue; background-color:hsla(0, 3%, 14%, 0.456); margin: 7% 15%; padding-bottom: 10%;">
     <h2>Customer</h2>
     <h1>Feedback</h1>
     <h3>Thank you for using the QMotors on your journey to modern marketing how can we do better? </h3>
