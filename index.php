@@ -133,6 +133,7 @@ check_login($db)
     <section id="testimonials">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-pause="hover" data-keyboard="true">
         <h1>Best sales cars</h1>
+<<<<<<< Updated upstream
         <div class="carousel-inner">
           <div class="carousel-item active">
             <h2 class="testimonial-text">nissan of a7 has better engine on the galaxy.</h2>
@@ -169,6 +170,70 @@ check_login($db)
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+=======
+          <div class="carousel-inner">
+            <?php
+           
+            $sql = "SELECT * From car";
+            $result = mysqli_query($db , $sql);
+            $row = mysqli_fetch_assoc($result);
+           ?>
+                    
+
+<div class='carousel-item active'>
+<a href = "cars.php?Id=<?php echo $row['Id'] ?>">
+<h2 class='testimonial-text'><?php echo $row['Name'] ?></h2>
+<img class='img-section ' src='<?php echo $row['photo'] ?>' alt='dog-profile'>
+<em><?php echo $row['Price'] ?>$</em>
+</a></div>
+
+<?php $row = mysqli_fetch_assoc($result); ?>
+<div class='carousel-item'>
+<a href = "cars.php?Id=<?php echo $row['Id'] ?>">
+<h2 class='testimonial-text '><?php echo $row['Name'] ?></h2>
+<img class='testimonial-image img-section' src='<?php echo $row["photo"] ?>' alt='lady-profile'>
+<em><?php echo $row['Price']; ?>$</em>
+                  </a>
+</div>
+
+<?php $row = mysqli_fetch_assoc($result); ?>
+<div class='carousel-item'>
+<a href = "cars.php?Id=<?php echo $row['Id'] ?>">
+<h2 class='testimonial-text '><?php echo $row['Name'] ?></h2>
+<img class='testimonial-image img-section' src='<?php echo $row["photo"] ?>' alt='lady-profile'>
+<em><?php echo $row['Price']; ?>$</em>
+                  </a>
+</div>
+
+<?php $row = mysqli_fetch_assoc($result); ?>
+<div class='carousel-item'>
+<a href = "cars.php?Id=<?php echo $row['Id'] ?>">
+<h2 class='testimonial-text '><?php echo $row['Name'] ?></h2>
+<img class='testimonial-image img-section' src='<?php echo $row["photo"] ?>' alt='lady-profile'>
+<em><?php echo $row['Price']; ?>$</em>
+                  </a>
+</div>
+
+<?php $row = mysqli_fetch_assoc($result); ?>
+<div class='carousel-item'>
+<a href = "cars.php?Id=<?php echo $row['Id'] ?>">
+<h2 class='testimonial-text '><?php echo $row['Name'] ?></h2>
+<img class='testimonial-image img-section' src='<?php echo $row["photo"] ?>' alt='lady-profile'>
+<em><?php echo $row['Price']; ?>$</em>
+                  </a>
+</div>
+                 
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div><!-- end carousel-inner -->
+
+>>>>>>> Stashed changes
       </div>
     </section>
 

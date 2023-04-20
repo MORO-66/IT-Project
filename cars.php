@@ -21,7 +21,7 @@ check_login($db)
             $sql = "SELECT * FROM car WHERE Id = '$Car_Id'";
             $result = mysqli_query($db , $sql);
             $row = mysqli_fetch_assoc($result);
-            
+            if(mysqli_affected_rows($db) > 0){
             echo "
             <section id='content-image'>
             <div class='row'>
@@ -39,7 +39,10 @@ check_login($db)
             
             ";
 
+            }else {
+                header("Location: index.php");
 
+            }
 
         ?>
         
