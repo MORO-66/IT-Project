@@ -32,7 +32,7 @@ check_login($db)
                     <h3 >Car model: " . $row['Name'] . "</h3><br> 
                     <h3 >Price: ". $row['Price'] ."$</h3><br>
                 </div>
-                <h3 >About:<P>". $row['Description'] . " </p></h3>
+                <h3 ><p>". $row['Description'] . " </p></h3>
             </div>
         </section>
             
