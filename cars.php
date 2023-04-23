@@ -16,7 +16,6 @@ check_login($db)
         <?php include "navbar.php"; ?>
         <!--content-->
         <?php
-        
             $Car_Id =  $_GET['Id'];
             $sql = "SELECT * FROM car WHERE Id = '$Car_Id'";
             $result = mysqli_query($db , $sql);
@@ -38,6 +37,7 @@ check_login($db)
             
             
             ";
+
 
 
 
