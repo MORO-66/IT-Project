@@ -25,29 +25,29 @@ check_login($db)
           <div class="col-lg-6 ">
           </div>
           <div class="col-lg-6">
-            
+
           <h1 class="n">Buy and rent best Cars in QMOTORS.</h1>
             <div class="bottons ">
             <?php
-                      
+
                     if(isset($_SESSION['name'])){
-                         
+
                         echo "<div class = 'Welcome_message' style = '    color: #eedad3d4;
     font-size: 30px;'> hello Mr . " . $_SESSION['name'] . "</div>";
-                            
-                        
+
+
                     }else{
-                       
-                     
+
+
                         echo "   <a href='./signup.php' target='_blank'><button type='button' class='btn btn-lg btn-dark download' >Sign up</button></a>
             <a href='./login.php' target='blank'><button  type='button'  class='btn btn-lg  btn-outline-light download'>Sign in</button></a>";
-                        
-                        
+
+
                     }
-    
-    
+
+
                 ?>
-            
+
             </div>
           </div>
 
@@ -75,7 +75,7 @@ check_login($db)
                     $result = mysqli_query($db , $sql);
 
                     while($row = mysqli_fetch_assoc($result)){
-                        
+
                       echo "
                       <a href = 'cars.php?Id=" . $row['Id']. "' style = 'text-decoration: none;' >
                       <div class='card__body'>
@@ -88,13 +88,13 @@ check_login($db)
                       <h2>".$row['Price']. "$" . "</h2>
                     </div>
                       </a>
-                      
+
                       ";
 
 
                     }
 
-                    ?>  
+                    ?>
         </div>
       </div>
             <div class = "show-more" style = '       width: 11%;
@@ -107,7 +107,7 @@ check_login($db)
     list-style: none;
     text-decoration: none;'>Show More</a></div>
     </div>
-    
+
     <!-- Features -->
 
     <section id="features" class="row">
@@ -213,7 +213,7 @@ check_login($db)
     <!-- Pricing -->
 
     <section id="pricing">
-      
+
       <h2>A List of modifies cars</h2>
       <p class="p">our new cars and pricing .</p>
       <div class="row">
@@ -261,7 +261,7 @@ check_login($db)
         </div>
       </div>
 
-      
+
 
     </section>
 

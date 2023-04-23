@@ -77,7 +77,7 @@ h2{
 .nav-link{
     font-family: 'Anton', sans-serif;
     font-size: 1.2rem;
-    color: #fff !important;
+    color: #fff ;
 }
 
 /*//////////head///////*/
@@ -90,7 +90,7 @@ h2{
  line-height: 1.5;
  font-family: 'Alkatra';
  color: rgba(252, 245, 245, 0.687);
- float: left !important;
+ float: left ;
  padding: 20px 10px;
  text-align: left;
  margin-left: 70px;
@@ -140,7 +140,7 @@ h3{
     object-fit: cover;
 }
 .testimonial-text{
-    color: #fff !important;
+    color: #fff ;
 }
 
 
@@ -231,8 +231,8 @@ footer i{
 }
 input
 {
-    background-color: #bcaaaa29 !important;
-    color: #efe9e9 !important;
+    background-color: #bcaaaa29 ;
+    color: #efe9e9 ;
 }
 .label{
     margin: 3%;
@@ -251,7 +251,7 @@ input
     margin: 20px 0;
 }
 .form-check-input{
-    border-color:#efe9e9 !important;
+    border-color:#efe9e9 ;
 }
 .card {
     --background: #ffffff;
