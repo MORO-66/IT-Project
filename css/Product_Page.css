@@ -91,3 +91,8 @@
     margin: 0;
     
   }
+
+  #searchbox {
+    margin:15px 5%;
+    width:90%;
+  }
