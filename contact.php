@@ -21,7 +21,7 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>
     </div>
-    
+    </div>
     <?php include "cta+footer.php"; ?>
 </body>
 </html>

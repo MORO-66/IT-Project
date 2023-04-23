@@ -8,7 +8,7 @@ check_login($db)
 <html lang="en">
     <head>
         <?php include "head.php"; ?>
-        <link rel="stylesheet" href="/css/cars.css">
+        <link rel="stylesheet" href="css/cars.css">
         <title>Qmotors</title>
     </head>
     <body>
@@ -24,7 +24,7 @@ check_login($db)
             
             echo "
             <section id='content-image'>
-            <div class='row' style='background-color:#ffffff47' ;>
+            <div class='row' style='background-color:#ffffff70' ;>
                 <div class='col-lg-6'>
                     <img class='img-section' src='". $row['photo'] ."' alt=''>
                 </div>
