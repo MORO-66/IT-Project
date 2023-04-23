@@ -3,6 +3,7 @@
 <head>
     <title>Q Motors</title>
     <?php include "head.php"; ?>
+    <link rel="stylesheet" href="/css/contact.css">
 </head>
 <body style="text-align: center;">
     <style media="screen">
@@ -28,7 +29,7 @@
             <button style="margin-left: 450px" type="submit" class="btn btn-primary">Submit</button>
         </div>
     </div>
-
+    </div>
     <?php include "cta+footer.php"; ?>
 </body>
 </html>
