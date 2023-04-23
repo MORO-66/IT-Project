@@ -79,7 +79,7 @@
           </div>
         </div>
       </div>
-      <button  class="btn"><a href = "SignUp.php">sign up</a></button>
+      <button  class="btn"><a href = "signup.php">sign up</a></button>
       <button type="submit" class="btn btn-primary">Sign in</button>
       
     </form>
