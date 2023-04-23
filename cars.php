@@ -29,10 +29,10 @@ check_login($db)
                     <img class='img-section' src='". $row['photo'] ."' alt=''>
                 </div>
                 <div class='col-lg-6' style='text-align: left;' >
-                    <h3 >Car model: " . $row['Name'] . "</h3><br> 
-                    <h3 >Price: ". $row['Price'] ."$</h3><br>
+                    <h1 >" . $row['Name'] . "</h1>
+                    <h3>Starting at ". $row['Price'] ."$</h3>
                 </div>
-                <h3 ><p>". $row['Description'] . " </p></h3>
+                <p>". $row['Description'] . " </p>
             </div>
         </section>
             
