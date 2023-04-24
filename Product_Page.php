@@ -62,7 +62,7 @@ check_login($db)
       let text = document.getElementById("searchbox").value;
       document.getElementById("main-cont").innerHTML="";
       for(car of cars){
-        if(car.Name.includes(text)) document.getElementById("main-cont").innerHTML+=get_item(car);
+        if(car.Name.toLowerCase().includes(text.toLowerCase())) document.getElementById("main-cont").innerHTML+=get_item(car);
       }
     }
     </script>
