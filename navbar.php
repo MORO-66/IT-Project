@@ -23,17 +23,9 @@
             <button type="button" class="btn btn-outline-dark " >
             <a href="./contact.php" target="blank" class="nav-link">Contact</a>
           </button>
-                    <?php
-                     if(isset($_SESSION['name'])){
-                          echo " <button type='button' class='btn btn-outline-dark ' >
-                          <a href='profile.php' target='blank' class='nav-link'>Profile</a>
-                          </button>
-                          ";
-
-                     }
-
-                    ?>
-           
+            <button type="button" class="btn btn-outline-dark " >
+            <a href="#" target="blank" class="nav-link">About</a>
+          </button>
 
           <button type="button" class="btn btn-outline-dark">
             <a href="#cta" class="nav-link">Download</a>
