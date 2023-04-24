@@ -16,12 +16,11 @@ check_login($db)
         <?php include "navbar.php"; ?>
         <!--content-->
         <?php
+           
             $Car_Id =  $_GET['Id'];
-            setcookie("Last_viewed_car" , $Car_Id , time() + 3600);
             $sql = "SELECT * FROM car WHERE Id = '$Car_Id'";
             $result = mysqli_query($db , $sql);
             $row = mysqli_fetch_assoc($result);
-
             if(mysqli_affected_rows($db) > 0){
             echo "
             <section id='content-image'>
@@ -34,16 +33,13 @@ check_login($db)
                     <h3>Price: ". $row['Price'] ."$</h3><br>
                     <h3>About:<P>". $row['Description'] . " </p></h3>
                 </div>
-          <p>". $row['Description'] . " </p>
             </div>
         </section>
             
+            
             ";
-        
 
-  
-            }
-            else {
+            }else {
                 header("Location: index.php");
 
             }

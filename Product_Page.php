@@ -17,7 +17,6 @@ check_login($db)
 
     <!--Cars-->
     <div>
-      <input class="form-control" type="search" id="searchbox" oninput="search()" placeholder="Search Car Name..."/>
       <div>
         <div style="display: flex; justify-content: space-between; margin: 15px 5%; flex-wrap: wrap; gap: 10px;">
         <?php
