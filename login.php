@@ -19,6 +19,7 @@
                 if($userdata['Password'] == $pass){
                         ///set for the session
                     $_SESSION['name'] = $userdata['Name'];
+                    $_SESSION['email'] = $userdata['Email'];                   
                     $_SESSION['User_name'] = $userdata['UserName'];
                     $_SESSION['pass_word'] = $userdata['Password'];
                     $_SESSION['birthday'] = $userdata['BirthDay'];
