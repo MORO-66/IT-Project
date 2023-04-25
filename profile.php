@@ -112,29 +112,38 @@
                     <div class="card mb-3 content">
                         <h1 class="m-3">Recent Avtivites</h1>
                             <div class="row">
+                            <div class="col-md-9 text secondary" style="margin: auto auto 10px 30px">  
                                 <?php
 
-                                    $sql = "SELECT * FROM car WHERE ID = ' ". $_COOKIE["Last_viewed_car"] . "' LIMIT 1";
-                                    $result = mysqli_query($db , $sql);
-                                    $row = mysqli_fetch_assoc($result);
+                                    
+                                   
+                                        if(isset($_COOKIE['Last_viewed_car'])){
+
+                                            $sql = "SELECT * FROM car WHERE ID = ' ". $_COOKIE["Last_viewed_car"] . "' LIMIT 1";
+                                            $result = mysqli_query($db , $sql);
+                                            $row = mysqli_fetch_assoc($result);
+
+
+                                            echo "
+
+                                            <a href = 'cars.php?Id=". $_COOKIE["Last_viewed_car"] . " '>
+                                            <div class='card__body'>
+                                  <div class='card__body-cover'>
+                                    <img src='". $row['photo']."' style = 'width :233px'alt=''>
+                                  </div>
+                                  <header class='card__body-header'>
+                                    <p class='card__body-header-subtitle'>".$row['Name']."</p>
+                                  </header>
+                                  <h2>" . $row['Price'] ."$</h2>
+                                </div>
+                                 </a>   ";
+
+                                        }
 
                                         ?>
-                                <div class="col-md-9 text secondary" style="margin: auto auto 10px 30px">
-                                
-                              <a href = " <?php echo " cars.php?Id=".$_COOKIE["Last_viewed_car"] ?> ">
-                                <div class="card__body">
-                      <div class="card__body-cover">
-                        <img src="<?php echo $row['photo']?>" style = "width :233px"alt="">
-                      </div>
-                      <header class="card__body-header">
-                        <p class="card__body-header-subtitle"><?php echo $row['Name'] ?></p>
-                      </header>
-                      <h2><?php echo $row['Price'] ?>$</h2>
-                    </div>
-                     </a>
 
 
-                                    <br/>
+                            <br/>
                                     <a class="btn" href="">Last Viewed car</a>
                             </div>
                         </div>
