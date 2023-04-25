@@ -23,7 +23,7 @@ check_login($db)
             
             echo "
             <section id='content-image'>
-            <div class='row' style='background-color:#ffffff70' ;>
+            <div class='row' style='color:white ; '>
                 <div class='col-lg-6'>
                     <img class='img-section' src='". $row['photo'] ."' alt=''>
                 </div>
@@ -43,17 +43,17 @@ check_login($db)
 
         ?>
         
-        <div  id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-keyboard="true" style='background-color:#ffffff47' >
+        <div  id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-keyboard="true" style='background-color:#09090947' >
   <div class="carousel-inner">
     <div class="carousel-item active">
-    <img class="testimonial-image img-section col-lg-2" src="./images/WhatsApp Image 2023-04-10 at 12.25.38 PM.jpeg" style="width:50%">
+    <img class="testimonial-image img-section col-lg-2" src="./images/WhatsApp Image 2023-04-10 at 12.25.38 PM.jpeg" style="width:75%">
             <div class="text"><h4>Caption Text</h4></div> 
         </div>
     <div class="carousel-item">
-    <img class="testimonial-image img-section" src="./images/bmw.jpg" style="width:50%">
+    <img class="testimonial-image img-section" src="./images/bmw.jpg" style="width:75%">
             <div class="text"><h4>Caption Text</h4></div>    </div>
     <div class="carousel-item">
-    <img class="testimonial-image img-section" src="./images/bmw2.jpg" style="width:50%">
+    <img class="testimonial-image img-section" src="./images/bmw2.jpg" style="width:75%">
             <div class="text"><h4>Caption Text</h4></div>
     </div>
   </div>
