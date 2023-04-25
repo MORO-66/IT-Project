@@ -17,6 +17,7 @@ check_login($db)
         <!--content-->
         <?php
             $Car_Id =  $_GET['Id'];
+            setcookie("Last_viewed_car" , $Car_Id , time() + 3600);
             $sql = "SELECT * FROM car WHERE Id = '$Car_Id'";
             $result = mysqli_query($db , $sql);
             $row = mysqli_fetch_assoc($result);
@@ -32,6 +33,8 @@ check_login($db)
                     <h3>Starting at ". $row['Price'] ."$</h3>
                 </div>
                 <p>". $row['Description'] . " </p>
+                <h3>Car Video : </h3>
+                 " . $row['Video'] ."
             </div>
         </section>
             
@@ -41,21 +44,25 @@ check_login($db)
 
 
 
+
         ?>
+     
         
-        <div  id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-keyboard="true" style='background-color:#09090947' >
-  <div class="carousel-inner">
+        <div  id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-keyboard="true" style='background-color:#ffffff47' >
+  
+        <div class="carousel-inner">
     <div class="carousel-item active">
-    <img class="testimonial-image img-section col-lg-2" src="./images/WhatsApp Image 2023-04-10 at 12.25.38 PM.jpeg" style="width:75%">
-            <div class="text"><h4>Caption Text</h4></div> 
+    <img class="testimonial-image img-section col-lg-2" src="<?php echo $row['photo']; ?>" style="width:50%">
+            <div class="text"><h4><?php echo $row['Name'] ?></h4></div> 
         </div>
     <div class="carousel-item">
-    <img class="testimonial-image img-section" src="./images/bmw.jpg" style="width:75%">
-            <div class="text"><h4>Caption Text</h4></div>    </div>
+    <img class="testimonial-image img-section" src="<?php echo $row['photo2'];  ?>" style="width:50%">
+            <div class="text"><h4><?php echo $row['Name'] ?></h4></div> </div>
     <div class="carousel-item">
-    <img class="testimonial-image img-section" src="./images/bmw2.jpg" style="width:75%">
-            <div class="text"><h4>Caption Text</h4></div>
+    <img class="testimonial-image img-section" src="<?php echo $row['photo3']; ?>" style="width:50%">
+            <div class="text"><h4><?php echo $row['Name'] ?></h4></div>
     </div>
+
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" >
     <span  class="carousel-control-prev-icon" aria-hidden="true"></span>

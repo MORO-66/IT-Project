@@ -1,3 +1,10 @@
++<?php 
+    session_start();
+    if(!isset($_SESSION['User_name'])){
+            header("Location: index.php");
+    }
+    include "connect_db.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,12 +55,13 @@
                         <div class="card-body" id="first">
                             <img src="images\profile-icon.png" class="rounded-circle" alt="profile-picture" width="150">
                             <div class="mt-3">
-                                <h3 style="color: white;">Mohamed Ayman</h3>
-                                <a href="">Home</a>
-                                <a href="">My orders</a>
-                                <a href="">Support</a>
-                                <a href="">Setting</a>
-                                <a href="">Signout</a>
+                                <h3 style="color: white;"><?php echo $_SESSION['name'] ?></h3>
+                                <a href="index.php">Home</a>
+                                <a href="contact.php">Support</a>
+                                <a href="profile.php">Setting</a>
+
+                                <a href="log-out.php">Signout</a>
+
                             </div>
                         </div>
                     </div>
@@ -64,10 +72,12 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-3">
-                                    <h5>Full Name</h5>
+                                    <h5>Name</h5>
                                 </div>
                                 <div class="col-md-9 text-secondary">
-                                    Mohamed Ayman
+                                   <?php
+                                   
+                                   echo $_SESSION['name'] ?>
                                 </div>
                             </div>
                             <hr>
@@ -76,24 +86,25 @@
                                     <h5>Email</h5>
                                 </div>
                                 <div class="col-md-9 text-secondary">
-                                    abc@gmail.com
+                                    <?php echo $_SESSION['email'] ?>
                                 </div>
                             </div>
                             <hr>
                             <div class="row">
                                 <div class="col-md-3">
-                                    <h5>Phone</h5>
+                                    <h5>UserName</h5>
                                 </div>
                                 <div class="col-md-9 text-secondary">
-                                    011647327863
+                                    <?php echo $_SESSION['User_name']; ?>
                                 </div>
                             </div>
+                            <hr>
                             <div class="row">
                                 <div class="col-md-3">
-                                    <h5>Address</h5>
+                                    <h5>Date Of Birth</h5>
                                 </div>
                                 <div class="col-md-9 text-secondary">
-                                    street no. 4, xyz
+                                    <?php echo $_SESSION['birthday']; ?>
                                 </div>
                             </div>
                         </dir>
@@ -101,8 +112,39 @@
                     <div class="card mb-3 content">
                         <h1 class="m-3">Recent Avtivites</h1>
                             <div class="row">
-                                <div class="col-md-9 text secondary" style="margin: auto auto 10px 30px">
-                                    <a class="btn" href="">purchased cars</a>
+                            <div class="col-md-9 text secondary" style="margin: auto auto 10px 30px">  
+                                <?php
+
+                                    
+                                   
+                                        if(isset($_COOKIE['Last_viewed_car'])){
+
+                                            $sql = "SELECT * FROM car WHERE ID = ' ". $_COOKIE["Last_viewed_car"] . "' LIMIT 1";
+                                            $result = mysqli_query($db , $sql);
+                                            $row = mysqli_fetch_assoc($result);
+
+
+                                            echo "
+
+                                            <a href = 'cars.php?Id=". $_COOKIE["Last_viewed_car"] . " '>
+                                            <div class='card__body'>
+                                  <div class='card__body-cover'>
+                                    <img src='". $row['photo']."' style = 'width :233px'alt=''>
+                                  </div>
+                                  <header class='card__body-header'>
+                                    <p class='card__body-header-subtitle'>".$row['Name']."</p>
+                                  </header>
+                                  <h2>" . $row['Price'] ."$</h2>
+                                </div>
+                                 </a>   ";
+
+                                        }
+
+                                        ?>
+
+
+                            <br/>
+                                    <a class="btn" href="">Last Viewed car</a>
                             </div>
                         </div>
                     </div>

@@ -133,42 +133,68 @@ check_login($db)
     <section id="testimonials">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-pause="hover" data-keyboard="true">
         <h1>Best sales cars</h1>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <h2 class="testimonial-text">nissan of a7 has better engine on the galaxy.</h2>
-            <img class="img-section " src="./images/wallpaperflare.com_wallpaper (4).jpg" alt="dog-profile">
-            <em>FIRRARI</em>
-          </div>
-          <div class="carousel-item">
-            <h2 class="testimonial-text ">Having best and beautiful fast experience.</h2>
-            <img class="testimonial-image img-section" src="./images/best_luxury_car.jpg" alt="lady-profile">
-            <em>Rolls-Royce </em>
-          </div>
-          <div class="carousel-item">
-            <h2 class="testimonial-text">Having best and beautiful fast experience.</h2>
-            <img class="testimonial-image img-section" src="./images/bmw.jpg" alt="lady-profile">
-            <em class="col-lg-6">BMW </em>
-          </div>
-          <div class="carousel-item">
-            <h2 class="testimonial-text">Having best and beautiful fast experience.</h2>
-            <img class="testimonial-image img-section" src="./images/bmw2.jpg" alt="lady-profile">
-            <em>BMW 840i</em>
-          </div>
-          <div class="carousel-item">
-            <h2 class="testimonial-text">Having best and beautiful fast experience.</h2>
-            <img class="testimonial-image img-section" src="./images/car-nissan-race-cars-road-wallpaper-preview.jpg" alt="lady-profile">
-            <em>Nissan GTR</em>
-          </div>
+          <div class="carousel-inner">
+            <?php
+           
+            $sql = "SELECT * From car";
+            $result = mysqli_query($db , $sql);
+            $row = mysqli_fetch_assoc($result);
+           ?>
+                    
 
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+<div class='carousel-item active'>
+<a href = "cars.php?Id=<?php echo $row['Id'] ?>">
+<h2 class='testimonial-text'><?php echo $row['Name'] ?></h2>
+<img class='img-section ' src='<?php echo $row['photo'] ?>' alt='dog-profile'>
+<em><?php echo $row['Price'] ?>$</em>
+</a></div>
+
+<?php $row = mysqli_fetch_assoc($result); ?>
+<div class='carousel-item'>
+<a href = "cars.php?Id=<?php echo $row['Id'] ?>">
+<h2 class='testimonial-text '><?php echo $row['Name'] ?></h2>
+<img class='testimonial-image img-section' src='<?php echo $row["photo"] ?>' alt='lady-profile'>
+<em><?php echo $row['Price']; ?>$</em>
+                  </a>
+</div>
+
+<?php $row = mysqli_fetch_assoc($result); ?>
+<div class='carousel-item'>
+<a href = "cars.php?Id=<?php echo $row['Id'] ?>">
+<h2 class='testimonial-text '><?php echo $row['Name'] ?></h2>
+<img class='testimonial-image img-section' src='<?php echo $row["photo"] ?>' alt='lady-profile'>
+<em><?php echo $row['Price']; ?>$</em>
+                  </a>
+</div>
+
+<?php $row = mysqli_fetch_assoc($result); ?>
+<div class='carousel-item'>
+<a href = "cars.php?Id=<?php echo $row['Id'] ?>">
+<h2 class='testimonial-text '><?php echo $row['Name'] ?></h2>
+<img class='testimonial-image img-section' src='<?php echo $row["photo"] ?>' alt='lady-profile'>
+<em><?php echo $row['Price']; ?>$</em>
+                  </a>
+</div>
+
+<?php $row = mysqli_fetch_assoc($result); ?>
+<div class='carousel-item'>
+<a href = "cars.php?Id=<?php echo $row['Id'] ?>">
+<h2 class='testimonial-text '><?php echo $row['Name'] ?></h2>
+<img class='testimonial-image img-section' src='<?php echo $row["photo"] ?>' alt='lady-profile'>
+<em><?php echo $row['Price']; ?>$</em>
+                  </a>
+</div>
+                 
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div><!-- end carousel-inner -->
+
       </div>
     </section>
 
@@ -201,7 +227,12 @@ check_login($db)
               <p>fast</p>
               <p>kold bearing</p>
               <p>nice look</p>
-              <button class="btn btn-lg btn-block btn-outline-dark " type="button"><a href = "SignUp.php">Sign Up</a></button>
+              <?php
+                  if(!isset($_SESSION['name'])){
+                      echo "<button class='btn btn-lg btn-block btn-outline-dark ' type='button'><a href = 'SignUp.php'>Sign Up</a></button>";
+                  }
+              ?>
+              
             </div>
           </div>
         </div>
@@ -215,7 +246,11 @@ check_login($db)
               <p>fast</p>
               <p>kold bearing</p>
               <p>nice look</p>
-              <button class="btn btn-lg btn-block btn-outline-dark " type="button"><a href = "SignUp.php">Sign Up</a></button>
+              <?php
+                  if(!isset($_SESSION['name'])){
+                      echo "<button class='btn btn-lg btn-block btn-outline-dark ' type='button'><a href = 'SignUp.php'>Sign Up</a></button>";
+                  }
+              ?>
             </div>
           </div>
         </div>
@@ -229,7 +264,11 @@ check_login($db)
               <p>fast</p>
               <p>kold bearing</p>
               <p>nice look</p>
-              <button class="btn btn-lg btn-block btn-outline-dark " type="button"><a href = "SignUp.php">Sign Up</a></button>
+              <?php
+                  if(!isset($_SESSION['name'])){
+                      echo "<button class='btn btn-lg btn-block btn-outline-dark ' type='button'><a href = 'SignUp.php'>Sign Up</a></button>";
+                  }
+              ?>
             </div>
           </div>
         </div>
