@@ -24,7 +24,7 @@ check_login($db)
             
             echo "
             <section id='content-image'>
-            <div class='row' style='background-color:#ffffff70' ;>
+            <div class='row' style='color:white ; '>
                 <div class='col-lg-6'>
                     <img class='img-section' src='". $row['photo'] ."' alt=''>
                 </div>
