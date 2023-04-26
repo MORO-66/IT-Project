@@ -8,7 +8,7 @@
         
         $email = $_POST['email'];
         $pass = $_POST['password'];
-         $sql = "SELECT * FROM users WHERE Email = '$email';";
+         $sql = "SELECT * FROM data WHERE Email = '$email';";
     
   if(!empty($email) && !empty($pass) &&  !is_numeric($email)){
 
@@ -19,7 +19,6 @@
                 if($userdata['Password'] == $pass){
                         ///set for the session
                     $_SESSION['name'] = $userdata['Name'];
-                    $_SESSION['email'] = $userdata['Email'];    
                     $_SESSION['User_name'] = $userdata['UserName'];
                     $_SESSION['pass_word'] = $userdata['Password'];
                     $_SESSION['birthday'] = $userdata['BirthDay'];
@@ -80,7 +79,7 @@
           </div>
         </div>
       </div>
-      <button  class="btn"><a href = "signup.php">sign up</a></button>
+      <button  class="btn"><a href = "Sign-Up.php">sign up</a></button>
       <button type="submit" class="btn btn-primary">Sign in</button>
       
     </form>
