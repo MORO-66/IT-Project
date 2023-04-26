@@ -1,5 +1,5 @@
 <?php
-    session_start();
+
     //connect database
    
     include "connect_db.php";
@@ -16,15 +16,11 @@
 
       
         if(!empty($user) && !empty($pass) && !empty($BirthDay) &&  !is_numeric($user) && !is_numeric($name) && !is_numeric($email)){
-              $sql = "INSERT INTO users (Name,Username,Email , Password, BirthDay , Gender) VALUES ('$name', '$user', '$email' , '$pass' , '$BirthDay' , '$gender'); ";
+              $sql = "INSERT INTO Data (Name,Username,Email , Password, BirthDay , Gender) VALUES ('$name', '$user', '$email' , '$pass' , '$BirthDay' , '$gender'); ";
               $result = mysqli_query( $db, $sql);
-              $_SESSION['name'] = $name;
-              $_SESSION['User_name'] = $user;
-              $_SESSION['pass_word'] = $pass;
-              $_SESSION['birthday'] = $BirthDay;
-              $_SESSION['gender'] = $gender;
-              header("Location: index.php");
-              exit();
+           
+                header("Location: Login.php");
+                exit();
            
         }else {
                 echo "please enter valid input";      
