@@ -2,9 +2,8 @@
 
 $username = 'root';
 $password = '';
-$dbname = 'users';
+$dbname = 'data';
 
 $db = new mysqli('localhost' , $username , $password , $dbname);
-
 
 ?>
