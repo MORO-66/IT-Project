@@ -1,7 +1,7 @@
 <?php
 
 include "Functions.php";
-check_login($db)
+$logged_in=check_login($db);
 
 ?>
 <!DOCTYPE html>
@@ -248,7 +248,7 @@ check_login($db)
               <p>nice look</p>
               <?php
                   if(!isset($_SESSION['name'])){
-                      echo "<button class='btn btn-lg btn-block btn-outline-dark ' type='button'><a href = 'SignUp.php'>Sign Up</a></button>";
+                      echo "<button class='btn btn-lg btn-block btn-outline-dark' type='button'><a href = 'SignUp.php'>Sign Up</a></button>";
                   }
               ?>
             </div>

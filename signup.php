@@ -19,6 +19,7 @@
               $sql = "INSERT INTO users (Name,Username,Email , Password, BirthDay , Gender) VALUES ('$name', '$user', '$email' , '$pass' , '$BirthDay' , '$gender'); ";
               $result = mysqli_query( $db, $sql);
               $_SESSION['name'] = $name;
+              $_SESSION['email'] = $email;
               $_SESSION['User_name'] = $user;
               $_SESSION['pass_word'] = $pass;
               $_SESSION['birthday'] = $BirthDay;

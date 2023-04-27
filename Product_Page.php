@@ -66,6 +66,6 @@ check_login($db)
       }
     }
     </script>
-    <?php include "cta+footer.php"; ?>
+    <?php include "cta+footer.php";?>
   </body>
 </html>      

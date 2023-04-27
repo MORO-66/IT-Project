@@ -5,7 +5,7 @@
   //  include "Functions.php";
           
     if($_SERVER['REQUEST_METHOD'] == "POST"){
-        
+
         $email = $_POST['email'];
         $pass = $_POST['password'];
          $sql = "SELECT * FROM users WHERE Email = '$email';";

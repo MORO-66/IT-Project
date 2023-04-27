@@ -13,11 +13,17 @@ function check_login($db){
                 
                 $user_data = mysqli_fetch_assoc($result); //stored in shape of array
               
-                
+                return true;
                 
             }
+            else return false;
         
-    }
+
+    }else{
+        
+       return false;
+        
+    }        
     
         
 }
