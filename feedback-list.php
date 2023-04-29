@@ -15,9 +15,31 @@
 </head>
 <body>
     <?php include "navbar.php"; ?>
-    <div>
-      <div>
-        <div style="display: flex; justify-content: space-between; margin: 15px 5%; flex-wrap: wrap; gap: 10px;" id="main-cont">
+    <div class="container">
+      <div class="row text-center py-5">
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
+          <form action="feedback-list.php" id="card"  method="post">
+
+          <div class="card shadow ">
+            <div>
+              <img src=" " alt=""class="img-fluid card-img-top ">  
+            </div>
+          <div class="card__body" >
+            <h5 class="card-title"> </h5>
+            <h5 class ="card_content"> </h5>
+
+          </div>
+          </div>
+
+          </form>
+        </div>
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
+
+        </div>
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
+
+        </div>
+        <div class="col-md-3 col-sm-6 my-3 my-md-0">
 
         </div>
       </div>
